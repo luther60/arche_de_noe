@@ -1,0 +1,76 @@
+*{box-sizing: border-box;}
+
+body, header{
+      margin: 0;
+      padding: 0;
+      background-color: rgb(207, 200, 192);
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul, li {
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 5px;
+      background-color:#928568 ; 
+      width: 100%;  
+      height: 25px; 
+}
+
+#lovecats{height: 150px;border: 5px solid black;padding: 0;}
+#dogfamily{height: 200px;border: 5px solid black;padding: 0;}
+img{width: 100%; height: 50px;border-radius: 10px;}
+
+a{     
+      display: flex; 
+      justify-content: flex-end;
+      width: 100px;
+      text-align: center;
+      padding: auto;
+      color: #181611;
+      font-weight: bold;
+}
+
+#home{width:50px;transition:0.7s;}
+#events{width:100px;transition:0.7s;}
+
+ #home:hover,#events:hover{background-color:black;color:aliceblue;border-radius: 5px;}
+
+.contenair{position: relative;}
+
+.title{
+      position: absolute;
+      font-size: 30px;
+      top: 7px;
+      left: 80px;
+      font-weight: bold;
+}
+
+p{
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+}
+
+h1, h3{text-align: center;}
+
+.contact{
+      width: 100%;
+}
+
+.social-media, img{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      width: 100%;
+      padding-bottom: 20px;
+      height: 100px;
+}
+
+.facebook{padding-right: 10px;}
+.instagram{padding-left: 10px;padding-right: 10px;}
+.twitter{padding-left: 10px;}
+
+.social_contains{background-color:#928568 ;}
+
+.media:hover{transform:scale(1.5);transition:0.4s linear;}
