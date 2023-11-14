@@ -17,8 +17,16 @@ ul, li {
       height: 25px; 
 }
 
-#lovecats{height: 150px;border: 5px solid black;padding: 0;}
-#dogfamily{height: 200px;border: 5px solid black;padding: 0;}
+#lovecats,#dogfamily,#catdog,#lovedog  {
+      height: 150px;
+      width: 130px;
+      transform:rotate(-5deg);
+      box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+      
+}
+
+.content_card{display: flex;flex-direction: row;justify-content: space-around;padding: 30px;}
+
 img{width: 100%; height: 50px;border-radius: 10px;}
 
 a{     
@@ -46,17 +54,11 @@ a{
       font-weight: bold;
 }
 
-p{
-      font-size: 20px;
-      line-height: 30px;
-      text-align: center;
-}
+p{font-size: 20px;line-height: 30px;text-align: center;}
 
 h1, h3{text-align: center;}
 
-.contact{
-      width: 100%;
-}
+.contact{width: 100%;}
 
 .social-media, img{
       display: flex;
@@ -70,7 +72,96 @@ h1, h3{text-align: center;}
 .facebook{padding-right: 10px;}
 .instagram{padding-left: 10px;padding-right: 10px;}
 .twitter{padding-left: 10px;}
-
+.icon{font-size: 0.5em;}
 .social_contains{background-color:#928568 ;}
 
 .media:hover{transform:scale(1.5);transition:0.4s linear;}
+
+/*for tablet*/
+@media only screen and (min-width:650px ) { 
+      #lovecats, #dogfamily {
+            width: 30%;
+            height: 300px;
+            border: none;
+            padding: 0;
+            transform:rotate(-5deg);
+            margin-top: 10px;
+            box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+      }
+
+      #catdog,#lovedog {
+            width: 30%;
+            height: 300px;
+            border: none;
+            padding: 0;
+            transform:rotate(5deg);
+            margin-top: 10px;
+            box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+      }
+      .content_card{display: flex;flex-direction: row;justify-content: space-around;padding: 30px;}
+      .emoji{font-size: 75px;padding-top: 50px;transform:rotate(-20deg)}
+      .emoji2{font-size: 75px;padding-top: 200px;transform:rotate(30deg);}
+      p{padding: 20px;}
+      .title{position: absolute;font-size: 50px;top: 7px;font-weight: bold;}
+     
+      ul, li {
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            padding-right: 5px;
+            background-color:#928568 ; 
+            width: 100%;  
+            height: 50px;
+            align-items: center;
+            font-size: 40px; 
+      }
+      #home{width:120px;transition:0.7s;}
+      #events{width:250px;transition:0.7s;} 
+}
+
+/*for Desktop*/
+@media only screen and (min-width: 1310px) {
+      #lovecats, #dogfamily {
+            width: 30%;
+            height: auto;
+            border: none;
+            padding: 0;
+            transform:rotate(-5deg);
+            margin-top: 10px;
+            box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+      }
+
+      #catdog,#lovedog {
+            width: 30%;
+            height: auto;
+            border: none;
+            padding: 0;
+            transform:rotate(5deg);
+            margin-top: 10px;
+            box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+      }
+      .content_card{display: flex;flex-direction: row;justify-content: space-around;padding: 30px;}
+     .emoji{font-size: 150px;padding-top: 50px;transform:rotate(-30deg)}
+     .emoji2{font-size: 150px;padding-top: 200px;transform:rotate(30deg);}
+     p{padding: 20px;}
+     .title{position: absolute;font-size: 50px;top: 7px;font-weight: bold;}
+     
+      ul, li {
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            padding-right: 5px;
+            background-color:#928568 ; 
+            width: 100%;  
+            height: 50px;
+            align-items: center;
+            font-size: 40px; 
+      }
+      #home{width:120px;transition:0.7s;}
+      #events{width:250px;transition:0.7s;}
+      
+}
+
+
+        
+      
