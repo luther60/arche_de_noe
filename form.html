@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>L'Arche de Noé</title>
+ </head>
+<body>
+  <header>
+    <div class="container"><div class="title">L'arche de Noé</div><img src="img/wall.jpg" id="logo" alt="Logo"></div>
+    <nav>
+      <ul>
+         <li class="link" ><a id="home" href="index.html" alt="Acceuil">Accueil</a></li>
+         <li class="link" ><a id="events" href="event.html" alt="Manifestations">Manifestations</a></li>
+         <li class="link" ><a id="job" href="form.html" alt="Postuler" target="_blank">Postuler</a></li>
+      </ul>   
+    </nav>
+  </header>
+  <h1>Formulaire de contact</h1>
+  <div class="form">
+    
+      <form class="input_txt">
+        <label for="fname">Nom:</label><br>
+        <input class="in" type="text" id="fname" name="fname" required><br>
+        <label for="lname">Prénom:</label><br>
+        <input class="in" type="text" id="lname" name="lname" required>
+        <label for="lname">Adresse:</label><br>
+        <input class="in" type="text" id="adress" name="adress" required>
+        <label for="lname">Code postal:</label><br>
+        <input class="in" type="text" id="postal" name="postal" required>
+        <label for="lname">Ville:</label><br>
+        <input class="in" type="text" id="city" name="city" required>
+        <label for="lname">Téléphone:</label><br>
+        <input class="in" type="text" id="phone" name="phone" required>
+
+        <h1>Quel est votre demande ?</h1>
+
+        <div class="choice">
+          
+        <input class="inbox" type="checkbox" id="adhesion" name="adhesion" value="adherer">
+        <label class="add" for="adhesion">Adhérer à l'association</label><br>
+        <input class="inbox" type="checkbox" id="don" name="don" value="money">
+        <label class="add" for="don">Faire un don de matériel</label><br>
+        <input class="inbox" type="checkbox" id="sponsor" name="sponsor" value="help">
+        <label class="add" for="sponsor">Parrainer un animal</label>
+        <input class="inbox" type="checkbox" id="benevole" name="benevole" value="benevolat">
+        <label class="add" for="benevole">Devenir bénévole</label><br>
+        <input class="inbox" type="checkbox" id="family" name="family" value="famille">
+        <label class="add" for="family">Devenir famille d'acceuil</label>
+        </div>
+
+        <textarea id="story" name="story" rows="15" cols="100" wrap="hard" placeholder="Votre message"></textarea>
+         
+        
+
+        <input class="submit" type="submit" value="Envoyer">
+      </form>
+  </div>
+   <footer>
+    <div class="contact">
+          <h3>Nous contacter :</h3>
+          <p>L'arche de Noé<br>87 rue de l'espoir<br>67560 Brives Paradise<br>Email : arbredenoe@gmail.com<br>Tél : 03.57.69.15.38
+                <br>Urgence : 07.26.37.51.69</p>
+    </div>
+    <div class="social_contains">
+          <h3>Suivez notre combat sur les réseaux :</h3>
+          <div class="social-media">
+                <a href="https://www.facebook.com"><img class="media facebook" src="img/icons8-facebook-48.png" alt="Lien Facebook"></a>
+                <a href="https://www.instagram.com"><img class="media instagram" src="img/icons8-instagram-48.png" alt="Lien Instagram"></a>
+                <a href="https://www.twitter.com"><img class="media twitter" src="img/icons8-twitter-48.png" alt="Lien Twitter"></a>
+                
+          </div>
+    </div>
+    <p class="icon">Icon by icons8</p>
+   </footer>
+</body>
+</html>
