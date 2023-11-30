@@ -1,5 +1,7 @@
 *{box-sizing: border-box;}
 
+/*Header, footer, index page*/
+
 body, header{
       margin: 0;
       padding: 0;
@@ -34,7 +36,6 @@ img{width: 100%; height: 50px;border-radius: 10px;}
 a{     
       display: flex; 
       justify-content: flex-end;
-      width: 100px;
       text-align: center;
       padding: auto;
       color: #181611;
@@ -42,8 +43,8 @@ a{
 }
 
 #home{width:50px;transition:0.7s;}
-#events{width:100px;transition:0.7s;}
-#job{width:135px;transition:0.7s;}
+#events{width:65px;transition:0.7s;}
+#job{width:55px;transition:0.7s;}
 
  #home:hover,#events:hover,#job:hover{background-color:black;color:aliceblue;border-radius: 5px;}
 
@@ -87,6 +88,8 @@ h1, h3{text-align: center;}
 
 .media:hover{transform:scale(1.5);transition:0.4s linear;}
 
+/*form page*/
+
 .form{display: flex;width: 85%;}
 
 .input_txt{display: flex;flex-direction: column;align-items: center;justify-content: center;width:100%;margin:20px;}
@@ -114,6 +117,11 @@ h1, h3{text-align: center;}
 
 textarea{border-radius: 20px;font-size: 1.5em;text-align:center;margin-bottom: 30px;width: 300px;}
 
+/*event page*/
+#po1, #po2{width: 300px;height: 200px;}
+.content{width: 300px;margin-left: 35px;}
+h1{margin: 20px;}
+h5{margin-left: 35px;}
 /*for tablet*/
 @media only screen and (min-width:650px ) { 
       #lovecats, #dogfamily {
@@ -153,12 +161,16 @@ textarea{border-radius: 20px;font-size: 1.5em;text-align:center;margin-bottom: 3
             font-size: 40px; 
       }
       #home{width:120px;transition:0.7s;}
-      #events{width:250px;transition:0.7s;} 
+      #events{width:165px;transition:0.7s;}
+      #job{width:135px;transition:0.7s;} 
       .form{display: flex;width: 100%;}
       .choice{display: flex;width: 60%;flex-direction: column;padding: 30px;margin: 10px;}
       .add{margin-bottom: 50px;}
       textarea{width: 700px}
-      
+      #po1, #po2{width: 400px;height: 250px;margin-left: 100px;}
+      .content{width: 600px;margin-left: 75px;}
+      h1{margin: 10px;}
+      h5{margin-left: 180px;}
 }
 
 /*for Desktop*/
@@ -200,12 +212,17 @@ textarea{border-radius: 20px;font-size: 1.5em;text-align:center;margin-bottom: 3
             font-size: 40px; 
       }
       #home{width:120px;transition:0.7s;}
-      #events{width:250px;transition:0.7s;}
+      #events{width:165px;transition:0.7s;}
       .form{display: flex;width: 100%;}
       .choice{display: flex;width: 100%;flex-direction: row;padding: 30px;margin: 10px;}
       .inbox{width: 30px;}
       .add{margin-top: 2px;margin-left: 20px;}
       textarea{width: 60%;}
+      #po1, #po2{width: 700px;height: 400px;margin-left: 150px;}
+      .content{width: 1000px;margin-left: 500px;}
+      h1{margin: 10px;}
+      h5{margin-left: 370px;}
+      .article{font-size: 2em;}
 }
 
 
